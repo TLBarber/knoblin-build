@@ -21,12 +21,13 @@
                 compatible = "zmk,keymap-sensors";
                 sensors = <&left_encoder &right_encoder>;
             };
+};
 
-        //OLED DISPLAY
-        &pro_micro_i2c {
-            status = "okay";
+//OLED DISPLAY
+&pro_micro_i2c {
+   status = "okay";
 
-            ssd1306@3c {
+        ssd1306@3c {
                 compatible = "solomon,ssd1306fb";
                 reg = <0x3c>;
                 label = "DISPLAY";
@@ -40,6 +41,5 @@
                 com-invdir;
                 com-sequential;
                 prechargep = <0x22>;
-            };
         };
 };
