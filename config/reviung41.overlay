@@ -1,4 +1,4 @@
-/ {#include "reviung41.dtsi"}
+#include "reviung41.dtsi"
 
 &right_encoder {
 	status = "okay";
