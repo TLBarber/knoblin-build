@@ -41,7 +41,7 @@
 						&none			&none 			&none 		 	&none
 						&bt BT_SEL 0   		&bt BT_SEL 1   		&bt BT_SEL 2    	&bt BT_CLR
 						&none			&none      		&none 			&none
-				&kp K_MUTE	&K_PREVIOUS   		&K_PLAY_PAUSE    	&K_NEXT       		&C_SHUFFLE
+				&kp K_MUTE	&kp K_PREVIOUS   	&kp K_PLAY_PAUSE    	&kp K_NEXT       	&kp C_SHUFFLE
 				&kp F5		&none			&none      		&none 			&none
 			 >;
 		 };
