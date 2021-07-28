@@ -1,0 +1,36 @@
+
+/ {
+	&right_encoder {
+		status = "okay";
+	};
+
+	&left_encoder {
+		status = "okay";
+	};
+
+	chosen {
+		zmk,kscan = &kscan0;
+	};
+
+	kscan0: kscan_0 {
+		compatible = "zmk,kscan-gpio-matrix";
+		label = "KSCAN";
+		diode_direction = "col2row";
+
+	row-gpios
+    		= <&pro_micro_d 4 GPIO_ACTIVE_HIGH> #D4 in QMK
+            	, <&pro_micro_d 10 GPIO_ACTIVE_HIGH> #B6 in QMK
+            	, <&pro_micro_d 16 GPIO_ACTIVE_HIGH> #B2 in QMK
+            	, <&pro_micro_d 14 GPIO_ACTIVE_HIGH> #B3 in QMK
+            	, <&pro_micro_d 15 GPIO_ACTIVE_HIGH> #B1 in QMK
+            	;
+
+	col-gpios
+		= <&pro_micro_d 9 GPIO_ACTIVE_HIGH> #B5 in QMK
+		, <&pro_micro_d 8 GPIO_ACTIVE_HIGH> #B4 in QMK
+		, <&pro_micro_d 7 GPIO_ACTIVE_HIGH> #E6 in QMK
+		, <&pro_micro_d 6 GPIO_ACTIVE_HIGH> #D7 in QMK
+		, <&pro_micro_d 5 GPIO_ACTIVE_HIGH> #C6 in QMK
+		;
+	};
+};
