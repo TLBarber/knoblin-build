@@ -2,8 +2,8 @@
         right_encoder: encoder_right {
                 compatible = "alps,ec11";
                 label = "RIGHT_ENCODER";
-                a-gpios = <&pro_micro_a 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>; #F7 in QMK
-                b-gpios = <&pro_micro_a 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>; #F5 in QMK
+                a-gpios = <&pro_micro_a 0 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>; #F7 in QMK
+                b-gpios = <&pro_micro_a 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>; #F5 in QMK
                 resolution = <4>;
                 status = "disabled";
             };
@@ -11,8 +11,8 @@
         left_encoder: encoder_left {
                 compatible = "alps,ec11";
                 label = "LEFT_ENCODER";
-                a-gpios = <&pro_micro_a 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>; #F6 in QMK
-                b-gpios = <&pro_micro_a 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>; #F4 in QMK
+                a-gpios = <&pro_micro_a 1 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>; #F6 in QMK
+                b-gpios = <&pro_micro_a 3 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>; #F4 in QMK
                 resolution = <4>;
                 status = "disabled";
             };
