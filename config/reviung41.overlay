@@ -18,7 +18,7 @@
 	kscan0: kscan_0 {
 		compatible = "zmk,kscan-gpio-matrix";
 		label = "KSCAN";
-		diode_direction = "rcol2row";
+		diode_direction = "col2row";
 
 	col-gpios
 		= <&pro_micro_d 9 GPIO_ACTIVE_HIGH> //B5 in QMK
