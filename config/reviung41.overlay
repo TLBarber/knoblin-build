@@ -29,11 +29,11 @@
 		;
 		
 	row-gpios
-    		= <&pro_micro_d 4 GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> //D4 in QMK
-            	, <&pro_micro_d 10 GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> //B6 in QMK
-            	, <&pro_micro_d 16 GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> //B2 in QMK
-            	, <&pro_micro_d 14 GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> //B3 in QMK
-            	, <&pro_micro_d 15 GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> //B1 in QMK
+    		= <&pro_micro_d 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> //D4 in QMK
+            	, <&pro_micro_d 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> //B6 in QMK
+            	, <&pro_micro_d 16 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> //B2 in QMK
+            	, <&pro_micro_d 14 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> //B3 in QMK
+            	, <&pro_micro_d 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> //B1 in QMK
             	;
 		
 	};
