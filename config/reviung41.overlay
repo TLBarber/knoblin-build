@@ -18,23 +18,24 @@
 	kscan0: kscan_0 {
 		compatible = "zmk,kscan-gpio-matrix";
 		label = "KSCAN";
-		diode_direction = "row2col";
-
-	row-gpios
-    		= <&pro_micro_d 4 GPIO_ACTIVE_HIGH> //D4 in QMK
-            	, <&pro_micro_d 10 GPIO_ACTIVE_HIGH> //B6 in QMK
-            	, <&pro_micro_d 16 GPIO_ACTIVE_HIGH> //B2 in QMK
-            	, <&pro_micro_d 14 GPIO_ACTIVE_HIGH> //B3 in QMK
-            	, <&pro_micro_d 15 GPIO_ACTIVE_HIGH> //B1 in QMK
-            	;
+		diode_direction = "rcol2row";
 
 	col-gpios
-		= <&pro_micro_d 9 GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> //B5 in QMK
-		, <&pro_micro_d 8 GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> //B4 in QMK
-		, <&pro_micro_d 7 GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> //E6 in QMK
-		, <&pro_micro_d 6 GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> //D7 in QMK
-		, <&pro_micro_d 5 GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> //C6 in QMK
+		= <&pro_micro_d 9 GPIO_ACTIVE_HIGH> //B5 in QMK
+		, <&pro_micro_d 8 GPIO_ACTIVE_HIGH> //B4 in QMK
+		, <&pro_micro_d 7 GPIO_ACTIVE_HIGH)> //E6 in QMK
+		, <&pro_micro_d 6 GPIO_ACTIVE_HIGH> //D7 in QMK
+		, <&pro_micro_d 5 GPIO_ACTIVE_HIGH> //C6 in QMK
 		;
+		
+	row-gpios
+    		= <&pro_micro_d 4 GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> //D4 in QMK
+            	, <&pro_micro_d 10 GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> //B6 in QMK
+            	, <&pro_micro_d 16 GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> //B2 in QMK
+            	, <&pro_micro_d 14 GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> //B3 in QMK
+            	, <&pro_micro_d 15 GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> //B1 in QMK
+            	;
+		
 	};
 	
 	default_transform: keymap_transform_0 {
